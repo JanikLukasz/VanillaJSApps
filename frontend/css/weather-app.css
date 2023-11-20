@@ -1,0 +1,168 @@
+#app-container {
+  background-image: url('../assets/weather-image.jpg');
+  background-size: cover;
+  font-family: 'Playpen Sans';
+  color: rgb(18, 18, 87);
+  font-size: 18px;
+}
+
+select,
+option,
+button {
+  font-family: 'Playpen Sans';
+  color: rgb(18, 18, 87);
+  cursor: pointer;
+}
+
+select {
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0;
+  border-radius: 3px;
+  background: none;
+  outline: none;
+  font-size: 20px;
+}
+
+option {
+  font-size: 14px;
+}
+
+.weather-app {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.726);
+  backdrop-filter: blur(4px);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.content-top > div {
+  margin: 10px 0px 10px 0px;
+}
+
+.current-date-time {
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: end;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  background: rgba(83, 223, 244, 0);
+  color: rgb(13, 114, 177);
+}
+
+.current-date-time > p {
+ margin-left: 5px;
+ margin-right: 5px;
+ font-size: 18px;
+ font-weight: 500;
+}
+
+.forecast-date-city {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-date {
+  margin-right: 100px;
+}
+
+#weather-icon {
+  width: 100%;
+  max-width: 300px;
+}
+
+.general-forecast {
+  display: flex;
+}
+
+.days {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.days p {
+  font-size: 15px;
+  padding: 6px;
+  margin: 1px;
+  background: rgb(179, 221, 255);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.days p.active {
+  background: rgb(68, 124, 255);
+  color: white; 
+  font-weight: 800;
+}
+
+#temp-icon {
+  width: 25px;
+  object-fit: contain;
+}
+
+.general-forecast-left {
+  margin-right: 30px;
+}
+
+.general-forecast-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.general-forecast-right > *{
+  margin: 10px;
+}
+
+.general-forecast-right div:nth-child(1) {
+  display: flex;
+  font-size: 22px;
+}
+
+.general-forecast-right div:nth-child(1) > div {
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.general-forecast-right div:nth-child(1) > div span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.general-forecast-right .temperature {
+  margin-right: 3px;
+  min-width: 30px;
+  padding: 2px;
+  background: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.general-forecast-right button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(77, 77, 77);
+}
+
+.general-forecast-right button.active {
+  font-weight: 800;
+  color: rgb(18, 18, 87);
+}
+
+
+
+

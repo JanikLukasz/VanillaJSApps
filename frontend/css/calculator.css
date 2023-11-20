@@ -1,0 +1,83 @@
+#app-container {
+    background-image: url('../assets/calculator-image.jpg');
+    background-size: cover;
+}
+
+.calculator-app {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    max-width: fit-content;
+    background: rgba(15, 143, 126, 0.719);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin: auto;
+    padding: 30px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.screen {
+    min-height: 33px;
+    padding: 15px;
+    font-size: 30px;
+    background: rgba(158, 247, 198, 0.637);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.screen p {
+    min-height: 33px;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.buttons-container .C {
+    grid-column: 1 / span 2;
+    background-color: rgba(133, 133, 240, 0.76);
+}
+
+.buttons-container .C:hover {
+    background-color: rgba(70, 70, 149, 0.76);
+}
+
+.buttons-container .C:active {
+    background-color: rgba(13, 13, 62, 0.76);
+}
+
+.buttons-container .DEL {
+    grid-column: 3 / span 2;
+    background-color: rgba(244, 97, 97, 0.73);
+}
+.buttons-container .DEL:hover {
+    background-color: rgba(153, 71, 71, 0.567);
+}
+.buttons-container .DEL:active {
+    background-color: rgba(46, 6, 6, 0.629);
+}
+
+.buttons-container button {
+    padding: 5px 18px 5px 18px;
+    font-size: 30px;
+    background-color: rgba(13, 105, 47, 0.595);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.buttons-container button:hover {
+    background-color: rgba(7, 69, 29, 0.753);
+}
+
+.buttons-container button:active {
+    background-color: rgba(1, 20, 8, 0.753);
+}
